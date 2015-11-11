@@ -1,0 +1,53 @@
+Evaluate your Site
+The first thing you'll want to do is evaluate your site. You'll want to find out where in your previous host which folder your website files are stored. You will also want to find out if you are using any databases, and if so, how you can obtain a backup of them. It is best to contact your current hosting company to obtain this information as it does vary from web host to web host.
+
+Download your Website Files
+Next, you'll want to download your website files from your previous host to your desktop. We recommend that you use FTP to perform this step. For more help with using FTP, please see the following link:
+
+Getting Started Guide: FTP
+
+Export your Website Databases
+If your website uses databases, you'll want to obtain a backup of your databases. Instructions for doing this vary from host to host, so you'll want to contact your previous host for assistance with this.
+
+In case your old host offers phpMyAdmin like us, here is a link to a helpful article that covers How to Export a Database using phpMyAdmin.
+
+Also, here is a link to an article that shows you how to Backup / Export a Database from SSH.
+
+Upload your Website Files and Import your Databases
+In this step, you will want to upload your website files using FTP into your public_html directory on your InMotion Hosting account. For further assistance with this, reference the Getting Started Guide: FTP link mentioned above.
+
+If your website has a database, now is the time to import it to your InMotion Hosting Account. You'll first want to create the databases within cPanel, and then import your database backup using phpMyAdmin. For further assistance with these steps, please see:
+
+Creating, Importing, and Exporting MySQL Databases
+
+Test your Website
+After you've uploaded your website files and restored your databases (if applicable), your next step will be to test your website. You can test your website using your account's temporary URL. To find your temporary URL, please see Testing your website using your Temporary URL for further assistance. If testing through the temporary url will not work for your site (some CMS applications do not work properly through the temporary url) you can use a edit your hosts file instead.
+
+Setup your Email
+If you have email addresses for your domain, such as you@yourdomain.com, now is the time to set them up. For more help with creating and configuring your email accounts, please see the following link:
+
+Getting Started Guide: Email
+
+If you currently point your email (MX records) to a third party email service such as Google, you'll need to update the MX records in your InMotion Hosting cPanel and ensure "remote mail exchange" is set. No email accounts need to be created on our servers as they reside on the third party providers servers. Please see our article on modifying MX records in cPanel for more information.
+
+If you are using a third party spam filtering service that still delivers emails to our server, such as Postini, you'll need to create those email accounts on our servers.
+
+You can migrate the current emails from your previous host to our servers. Please see our guide on moving over the existing emails you currently have.
+
+Point your Domain
+After you've migrated your website to your InMotion Hosting account and setup your email addresses, you'll now want to point your domain name away from your previous host and to your InMotion Hosting server. This can be accomplished by modifying your domain's nameservers with your current registrar to:
+
+ns.inmotionhosting.com
+ns2.inmotionhosting.com
+
+
+If you are signed up as a Reseller (Not a VPS or Dedicated account) you will point the namesrvers to:
+ns1.servconfig.com
+ns2.servconfig.com
+
+For more help with this, please see our DNS Modification Tutorial
+
+Test your Website Again
+When you update your nameservers, it may take up to 24 hours before the new changes begin to take affect. We recommend that you test your website right after the nameserver change, and then again every 6 - 12 hours until 24 hours has elapsed since you initially updated your nameservers.
+
+The InMotion Hosting Support Department is available 24 hours a day, 7 days a week. If you need any assistance with the steps above, feel free to contact us at any time.
